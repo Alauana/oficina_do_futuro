@@ -2,7 +2,7 @@
   <br>
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Nexus" width="120">
   <br>
-  NEXUS DO CONHECIMENTO
+  PORTAL DO CONHECIMENTO
   <br>
 </h1>
 
@@ -24,13 +24,13 @@
 
 ## 🚀 Sobre o Projeto
 
-Este projeto é um **Hub Educacional** que reúne três minicursos distintos. A mágica acontece na experiência do usuário: cada curso possui uma identidade visual única (CSS temático) que reflete o assunto abordado, utilizando a biblioteca **Reveal.js** para apresentações fluidas.
+Este projeto é um **Hub Educacional** que reúne três minicursos distintos criados para um projeto de extensão em uma escola pública. A mágica acontece na experiência do usuário: cada curso possui uma identidade visual única (CSS temático) que reflete o assunto abordado, utilizando a biblioteca **Reveal.js** para apresentações fluidas.
 
 ---
 
 ## 🌌 O Multiverso de Cursos
 
-| <img src="https://cdn-icons-png.flaticon.com/512/3665/3665923.png" width="50"> **Lógica (Retro)** | <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" width="50"> **Arduino (Maker)** | <img src="https://cdn-icons-png.flaticon.com/512/1055/1055666.png" width="50"> **Web Dev (Hacker)** |
+| <img src="https://cdn-icons-png.flaticon.com/512/8099/8099466.png" width="50"> **Lógica (Retro)** | <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" width="50"> **Arduino (Maker)** | <img src="https://cdn-icons-png.flaticon.com/512/1055/1055666.png" width="50"> **Web Dev (Hacker)** |
 | :---: | :---: | :---: |
 | **Tema:** 8-bit / Pixel Art | **Tema:** Tinkercad / Lab | **Tema:** VS Code / Dracula |
 | Estética de jogos antigos, fontes pixeladas e cores neon. | Estilo limpo, blueprint de engenharia e elementos de simulação. | Simulação de IDE, highlight de sintaxe e estrutura de arquivos. |
@@ -52,8 +52,10 @@ Este projeto foi construído com amor e código puro:
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="https://via.placeholder.com/600x300/0f0c29/ffffff?text=Print+da+Tela+Inicial" alt="Tela Inicial" width="600">
-  <br><em>(Substitua esse link pelo print real do seu site depois de subir!)</em>
+  <img src="./Screenshots/home.png" alt="Tela Inicial" width="450">
+  <img src="./Screenshots/logica.png" alt="Tela Inicial" width="466">
+  <img src="./Screenshots/arduino.png" alt="Tela Inicial" width="450">
+  <img src="./Screenshots/web.png" alt="Tela Inicial" width="450">
 </div>
 
 ---
@@ -70,4 +72,4 @@ Feito com ❤️ por **[Alauana Jackeline]**.
 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/alauana-jackeline-b98322307)](https://www.linkedin.com/in/alauana-jackeline-b98322307) 
-[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:SEU-EMAIL)](mailto:SEU-EMAIL)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:alauanaj@gmail.com)](mailto:alauanaj@gmail.com)
