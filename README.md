@@ -34,7 +34,7 @@ Este projeto é um **Hub Educacional** que reúne três minicursos distintos cri
 | :---: | :---: | :---: |
 | **Tema:** 8-bit / Pixel Art | **Tema:** Tinkercad / Lab | **Tema:** VS Code / Dracula |
 | Estética de jogos antigos, fontes pixeladas e cores neon. | Estilo limpo, blueprint de engenharia e elementos de simulação. | Simulação de IDE, highlight de sintaxe e estrutura de arquivos. |
-| [Acessar Código](./logica) | [Acessar Código](./arduino) | [Acessar Código](./web) |
+| [Acessar Código](./web_site/logica) | [Acessar Código](./web_site/arduino) | [Acessar Código](./web_site/web) |
 
 ---
 
@@ -53,9 +53,9 @@ Este projeto foi construído com amor e código puro:
 
 <div align="center">
   <img src="./Screenshots/home.png" alt="Tela Inicial" width="450">
-  <img src="./Screenshots/logica.png" alt="Tela Inicial" width="466">
-  <img src="./Screenshots/arduino.png" alt="Tela Inicial" width="450">
-  <img src="./Screenshots/web.png" alt="Tela Inicial" width="450">
+  <img src="./Screenshots/logica.png" alt="Tela Logica" width="466">
+  <img src="./Screenshots/arduino.png" alt="Tela Arduino" width="450">
+  <img src="./Screenshots/web.png" alt="Tela Web" width="450">
 </div>
 
 ---
