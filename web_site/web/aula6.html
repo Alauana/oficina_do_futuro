@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Web Dev Class</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/dracula.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/dracula.min.css">
+
+    <style>
+        /* Ajustes finos para o Dev Mode */
+        .reveal { font-family: 'Fira Code', monospace; }
+        .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+        .reveal pre { box-shadow: 0 10px 20px rgba(0,0,0,0.5); border-radius: 8px; }
+        
+        /* Estilo do Card "JSON do Instrutor" */
+        .json-card {
+            background: #1e1f29;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 0.6em;
+            border: 1px solid #6272a4;
+            box-shadow: 0 0 20px rgba(189, 147, 249, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .key { color: #8be9fd; }
+        .string { color: #f1fa8c; }
+        .number { color: #bd93f9; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+           <section>
+                <h2>Projeto Final</h2>
+                <p style="color: #ff5555;">// Aula 06: Deploy!</p>
+            </section>
+
+            <section>
+                <h3>O Briefing</h3>
+                <p>Crie seu <b>Portfólio Pessoal</b> ou um <b>Mini-Site Temático</b>.</p>
+                <p>Requisitos Obrigatórios:</p>
+                <ul style="font-size: 0.8em;">
+                    <li>✅ HTML Semântico (Header, Nav, Footer).</li>
+                    <li>✅ CSS com Flexbox (Layout responsivo).</li>
+                    <li>✅ Um formulário de contato.</li>
+                    <li>✅ JS: Um botão de alerta ou menu mobile.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Estrutura Sugerida</h3>
+                <pre><code class="plaintext" data-trim>
+            meu-site/
+            ├── index.html
+            ├── style.css
+            ├── script.js
+            └── img/
+                └── perfil.jpg
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Boa Sorte, Devs!</h2>
+                <p>O mundo é de quem codifica.</p>
+                <img src="https://media.giphy.com/media/hrRJ41JB2zlg7vIPxt/giphy.gif" style="width: 300px;">
+            </section>
+
+            <section>
+                <a href="index.html" style="color: #8be9fd;">cd .. (Voltar)</a>
+            </section>  
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script> Reveal.initialize({ hash: true, controls: true, center: true, transition: 'fade', plugins: [ RevealHighlight ] }); </script>
+</body>
+</html>

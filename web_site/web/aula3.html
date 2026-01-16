@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Web Dev Class</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/dracula.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/dracula.min.css">
+
+    <style>
+        /* Ajustes finos para o Dev Mode */
+        .reveal { font-family: 'Fira Code', monospace; }
+        .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+        .reveal pre { box-shadow: 0 10px 20px rgba(0,0,0,0.5); border-radius: 8px; }
+        
+        /* Estilo do Card "JSON do Instrutor" */
+        .json-card {
+            background: #1e1f29;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 0.6em;
+            border: 1px solid #6272a4;
+            box-shadow: 0 0 20px rgba(189, 147, 249, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .key { color: #8be9fd; }
+        .string { color: #f1fa8c; }
+        .number { color: #bd93f9; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Introdução ao CSS</h2>
+                <p style="color: #ffb86c;">// Aula 03: Dando Vida e Cor</p>
+            </section>
+
+            <section>
+                <h3>Sintaxe CSS</h3>
+                <p>Quem eu quero mudar? { O que eu quero mudar? }</p>
+                <pre><code class="css" data-trim data-line-numbers>
+            h1 {
+                color: red;           /* Cor do texto */
+                font-size: 50px;      /* Tamanho */
+                text-align: center;   /* Alinhamento */
+            }
+
+            p {
+                background-color: #f1f1f1;
+                padding: 20px;
+            }
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Box Model (A Caixa)</h3>
+                <p>Tudo na web é um retângulo.</p>
+                <ul>
+                    <li style="color: #ff79c6;">Margin: Espaço fora da caixa.</li>
+                    <li style="color: #8be9fd;">Border: A borda da caixa.</li>
+                    <li style="color: #50fa7b;">Padding: Espaço dentro da caixa.</li>
+                    <li style="color: #f1fa8c;">Content: O conteúdo real.</li>
+                </ul>
+                
+            </section>
+
+            <section>
+                <h3>Missão do Estilista</h3>
+                <p>Pegue o currículo da Aula 1 e deixe ele bonito.</p>
+                <p>Mude fontes, cores de fundo e centralize o conteúdo.</p>
+            </section>
+
+            <section>
+                <a href="index.html" style="color: #8be9fd;">cd .. (Voltar)</a>
+            </section>    
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script> Reveal.initialize({ hash: true, controls: true, center: true, transition: 'fade', plugins: [ RevealHighlight ] }); </script>
+</body>
+</html>

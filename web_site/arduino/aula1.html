@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Arduino Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/arduino-light.min.css">
+
+    <style>
+        /* Customização Estilo Tinkercad */
+        :root { --tinker-blue: #0099ff; --tinker-orange: #ff7700; --bg-grid: #f2f7fa; }
+        
+        .reveal { 
+            font-family: 'Varela Round', sans-serif; 
+            background-color: var(--bg-grid);
+            background-image: linear-gradient(#dbebf7 1px, transparent 1px), linear-gradient(90deg, #dbebf7 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        
+        /* Títulos */
+        .reveal h1, .reveal h2, .reveal h3 { color: var(--tinker-blue); font-weight: bold; }
+        .reveal h1 { text-shadow: 3px 3px 0px rgba(0,0,0,0.1); }
+        
+        /* Blocos de Código estilo Janela */
+        .reveal pre {
+            background: #ffffff;
+            border: 4px solid #00979C; /* Cor oficial Arduino Teal */
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Card do Instrutor */
+        .maker-profile {
+            background: white; border-radius: 20px; padding: 20px; 
+            border-bottom: 5px solid var(--tinker-orange);
+            display: flex; align-items: center; gap: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Botão simulando Tinkercad */
+        .btn-simular {
+            background: var(--tinker-green); color: white; padding: 10px 20px;
+            border-radius: 5px; text-decoration: none; font-weight: bold;
+            box-shadow: 0 4px 0 #2e8f46; margin-top: 20px; display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+            <h1>Arduino & Tinkercad</h1>
+            <h3>Aula 01: Bem-vindo ao Lab</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" style="width: 150px; border:none; box-shadow:none;">
+        </section>
+
+        <section>
+            <h3>Quem é o Maker?</h3>
+            <div class="maker-profile">
+                <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Maker" style="width: 120px; height: 120px; border-radius: 10px;">
+                <div style="text-align: left;">
+                    <h4 style="margin:0; color: var(--tinker-blue);">SEU NOME</h4>
+                    <p style="color: #666; margin: 5px 0;">Especialidade: Prototipagem & IoT</p>
+                    <p style="font-size: 0.8em;">"Errar faz parte de descobrir. Se não queimou um LED, não aprendeu!"</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>O que é o Arduino?</h3>
+            <p>É um pequeno computador que consegue "sentir" e "controlar" o mundo físico.</p>
+            <div style="display: flex; justify-content: space-around;">
+                <div class="fragment">👀 <b>Sensores</b> (Entrada)</div>
+                <div class="fragment">💪 <b>Atuadores</b> (Saída)</div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Anatomia do Código</h3>
+            <div style="text-align: left; font-size: 0.8em;">
+                <p>Todo código Arduino tem duas partes principais:</p>
+            </div>
+            <pre><code class="arduino" data-trim>
+        void setup() {
+        // Acontece UMA VEZ ao ligar
+        // Ex: "Arrumar a mochila"
+        pinMode(13, OUTPUT);
+        }
+
+        void loop() {
+        // Acontece PARA SEMPRE
+        // Ex: "Rotina do dia a dia"
+        digitalWrite(13, HIGH);
+        delay(1000);
+        }
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>Desafio: Hello World (LED)</h3>
+            <p>Vamos fazer o LED piscar!</p>
+            <ol>
+                <li>Abra o Tinkercad > Circuitos.</li>
+                <li>Arraste um Arduino UNO.</li>
+                <li>Arraste um LED e um Resistor (220 ohms).</li>
+            </ol>
+            <a href="#" class="btn-simular">▶ Iniciar Simulação</a>
+        </section>
+
+        <section>
+            <a href="index.html" style="color: var(--tinker-blue);">Voltar ao Menu</a>
+        </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script> Reveal.initialize({ hash: true, controls: true, center: true, transition: 'slide', plugins: [ RevealHighlight ] }); </script>
+</body>
+</html>

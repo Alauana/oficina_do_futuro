@@ -1,0 +1,120 @@
+/* arquivo: arduino/style-tinker.css */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --tinker-blue: #0099ff;
+    --tinker-orange: #ff7700;
+    --tinker-green: #44c767;
+    --grid-line: #dbebf7;
+    --bg-color: #f2f7fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif; /* Fonte arredondada e amigável */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    
+    /* O famoso fundo de grid do Tinkercad */
+    background-image: 
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 40px 40px;
+    
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: var(--tinker-blue);
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px white;
+}
+
+.subtitle {
+    background: var(--tinker-orange);
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 0 #cc5f00; /* Efeito 3D no botão */
+}
+
+/* Container dos Cards */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cards estilo "Componente Eletrônico" */
+.aula-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    border: 3px solid var(--tinker-blue);
+    box-shadow: 5px 5px 0px rgba(0, 153, 255, 0.2);
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.aula-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 10px 0px rgba(0, 153, 255, 0.3);
+}
+
+.aula-card h3 {
+    color: var(--tinker-orange);
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+/* Ícone de simulação no topo do card */
+.card-icon {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--tinker-blue);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.aula-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 15px 30px;
+    background: white;
+    color: var(--tinker-blue);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid var(--tinker-blue);
+    transition: all 0.3s;
+}
+
+.btn-voltar:hover {
+    background: var(--tinker-blue);
+    color: white;
+}

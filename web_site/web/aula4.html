@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Web Dev Class</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/dracula.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/dracula.min.css">
+
+    <style>
+        /* Ajustes finos para o Dev Mode */
+        .reveal { font-family: 'Fira Code', monospace; }
+        .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+        .reveal pre { box-shadow: 0 10px 20px rgba(0,0,0,0.5); border-radius: 8px; }
+        
+        /* Estilo do Card "JSON do Instrutor" */
+        .json-card {
+            background: #1e1f29;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 0.6em;
+            border: 1px solid #6272a4;
+            box-shadow: 0 0 20px rgba(189, 147, 249, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .key { color: #8be9fd; }
+        .string { color: #f1fa8c; }
+        .number { color: #bd93f9; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Layout com Flexbox</h2>
+                <p style="color: #bd93f9;">// Aula 04: Arrumando a Bagunça</p>
+            </section>
+
+            <section>
+                <h3>A Tag DIV</h3>
+                <p>A <code>&lt;div&gt;</code> é uma caixa vazia usada para agrupar coisas.</p>
+                <pre><code class="html">
+            <div class="header">
+            <img src="logo.png">
+            <nav>Menu</nav>
+            </div>
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Display: Flex</h3>
+                <p>O superpoder do layout moderno.</p>
+                <pre><code class="css" data-trim>
+            .container {
+                display: flex; /* Coloca tudo lado a lado */
+                justify-content: center; /* Alinha no centro (horizontal) */
+                align-items: center; /* Alinha no centro (vertical) */
+                gap: 20px; /* Espaço entre os itens */
+            }
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Atividade: Landing Page</h3>
+                <p>Crie uma estrutura clássica:</p>
+                <div style="border: 1px solid white; width: 300px; margin: 0 auto; font-size: 0.5em;">
+                    <div style="border-bottom: 1px solid white; padding: 10px;">HEADER (Logo + Menu)</div>
+                    <div style="display: flex; height: 100px;">
+                        <div style="flex:1; border-right: 1px solid white; padding: 20px;">CONTEÚDO</div>
+                        <div style="flex:1; padding: 20px;">IMAGEM</div>
+                    </div>
+                    <div style="border-top: 1px solid white; padding: 10px;">FOOTER</div>
+                </div>
+            </section>
+
+            <section>
+                <a href="index.html" style="color: #8be9fd;">cd .. (Voltar)</a>
+            </section>    
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script> Reveal.initialize({ hash: true, controls: true, center: true, transition: 'fade', plugins: [ RevealHighlight ] }); </script>
+</body>
+</html>

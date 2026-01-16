@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Minicursos - Lógica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+
+    <style>
+        :root { --neon-blue: #00f3ff; --neon-yellow: #ffdd00; --bg-dark: #0a0a1a; }
+        .reveal { background-color: var(--bg-dark); background-image: linear-gradient(rgba(0, 243, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 243, 255, 0.05) 1px, transparent 1px); background-size: 40px 40px; font-family: 'Fira Code', monospace; }
+        .reveal h1, .reveal h2, .reveal h3 { font-family: 'VT323', monospace; text-transform: uppercase; letter-spacing: 3px; }
+        .reveal h1 { color: var(--neon-blue); text-shadow: 0 0 10px rgba(0,243,255,0.5); }
+        .reveal h3 { color: var(--neon-yellow); }
+        .reveal pre code { background: rgba(0,0,0,0.8); border: 2px dashed var(--neon-blue); box-shadow: 5px 5px 0px rgba(0,243,255,0.2); padding: 20px; }
+        .btn-final { padding: 15px 30px; border: 2px solid var(--neon-yellow); color: var(--neon-yellow); font-family: 'VT323'; text-decoration: none; display: inline-block; margin-top: 30px; }
+        .btn-final:hover { background: var(--neon-yellow); color: black; }
+        
+        /* Estilo do Card "Sobre Mim" */
+        .profile-card { display: flex; align-items: center; border: 2px solid var(--neon-blue); padding: 20px; background: rgba(0,0,0,0.6); text-align: left; gap: 20px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--neon-yellow); object-fit: cover; }
+        .profile-stats { font-size: 0.7em; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Lógica de Programação</h1>
+                <h3>Aula 01: O Início da Jornada</h3>
+                <p style="color: var(--neon-blue); margin-top: 50px;">>_ Press Start</p>
+            </section>
+
+            <section>
+                <h3>Player Select: Instrutor</h3>
+                <div class="profile-card">
+                    <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Instructor" class="profile-img" alt="Foto Instrutor">
+                    <div>
+                        <h4 style="margin:0; color: var(--neon-blue);">SEU NOME AQUI</h4>
+                        <p style="color: var(--neon-yellow); margin: 5px 0;">Class: Desenvolvedor & Professor</p>
+                        <div class="profile-stats">
+                            <p>>_ XP: Especialista em Lógica e Web</p>
+                            <p>>_ Skill Especial: Ensinar complexidade com simplicidade</p>
+                            <p>>_ Missão: Transformar vocês em programadores.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Objetivo da Missão</h3>
+                <ul>
+                    <li class="fragment">Entender o que é Lógica de Programação.</li>
+                    <li class="fragment">Diferenciar Dados vs. Instruções.</li>
+                    <li class="fragment">Criar seu primeiro algoritmo (no papel!).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Dados vs. Instruções</h3>
+                <div style="display: flex; justify-content: space-around; margin-top: 30px;">
+                    <div class="fragment" style="border: 1px dashed white; padding: 20px; width: 45%;">
+                        <h4 style="color: #ff5555;">DADOS</h4>
+                        <p>Ingredientes</p>
+                        <small>Ovos, Farinha, Leite</small>
+                    </div>
+                    <div class="fragment" style="border: 1px dashed var(--neon-blue); padding: 20px; width: 45%;">
+                        <h4 style="color: var(--neon-blue);">INSTRUÇÕES</h4>
+                        <p>Modo de Preparo</p>
+                        <small>"Bata os ovos", "Misture"</small>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Desafio Offline 📝</h3>
+                <p>Objetivo: Guiar um robô (seu colega) para trocar uma lâmpada.</p>
+                <br>
+                <p style="color: var(--neon-yellow);">Escreva no papel o passo a passo exato!</p>
+                <small>Cuidado: Se você não disser "suba na escada", o robô tentará alcançar o teto pulando.</small>
+            </section>
+
+            <section>
+                <a href="index.html" class="btn-final"><< Voltar ao Menu</a>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script> Reveal.initialize({ hash: true, controls: true, progress: true, center: true, transition: 'concave', plugins: [ RevealHighlight ] }); </script>
+</body>
+</html>

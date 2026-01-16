@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Web Dev Class</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/dracula.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/dracula.min.css">
+
+    <style>
+        /* Ajustes finos para o Dev Mode */
+        .reveal { font-family: 'Fira Code', monospace; }
+        .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+        .reveal pre { box-shadow: 0 10px 20px rgba(0,0,0,0.5); border-radius: 8px; }
+        
+        /* Estilo do Card "JSON do Instrutor" */
+        .json-card {
+            background: #1e1f29;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 0.6em;
+            border: 1px solid #6272a4;
+            box-shadow: 0 0 20px rgba(189, 147, 249, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .key { color: #8be9fd; }
+        .string { color: #f1fa8c; }
+        .number { color: #bd93f9; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Listas, Tabelas & Forms</h2>
+                <p style="color: #50fa7b;">// Aula 02: Organizando Dados</p>
+            </section>
+
+            <section>
+                <h3>Listas (UL vs OL)</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <p>Não Ordenada (Bolinhas)</p>
+                        <pre><code class="html"><ul>
+            <li>Café</li>
+            <li>Código</li>
+            </ul></code></pre>
+                    </div>
+                    <div>
+                        <p>Ordenada (Números)</p>
+                        <pre><code class="html"><ol>
+            <li>Acordar</li>
+            <li>Codar</li>
+            </ol></code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Formulários</h3>
+                <p>Como o usuário fala com você.</p>
+                <pre><code class="html" data-trim>
+            <form>
+            <label>Nome:</label>
+            <input type="text" placeholder="Digite seu nome">
+            
+            <label>Senha:</label>
+            <input type="password">
+            
+            <button>Enviar</button>
+            </form>
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Desafio Prático</h3>
+                <p>Crie uma página de "Fale Conosco".</p>
+                <ul>
+                    <li>Uma tabela com horário de atendimento.</li>
+                    <li>Um formulário pedindo Nome, Email e Mensagem.</li>
+                </ul>
+            </section>
+
+            <section>
+                <a href="index.html" style="color: #8be9fd;">cd .. (Voltar)</a>
+            </section>    
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script> Reveal.initialize({ hash: true, controls: true, center: true, transition: 'fade', plugins: [ RevealHighlight ] }); </script>
+</body>
+</html>

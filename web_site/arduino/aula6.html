@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Arduino Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/arduino-light.min.css">
+
+    <style>
+        /* Customização Estilo Tinkercad */
+        :root { --tinker-blue: #0099ff; --tinker-orange: #ff7700; --bg-grid: #f2f7fa; }
+        
+        .reveal { 
+            font-family: 'Varela Round', sans-serif; 
+            background-color: var(--bg-grid);
+            background-image: linear-gradient(#dbebf7 1px, transparent 1px), linear-gradient(90deg, #dbebf7 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        
+        /* Títulos */
+        .reveal h1, .reveal h2, .reveal h3 { color: var(--tinker-blue); font-weight: bold; }
+        .reveal h1 { text-shadow: 3px 3px 0px rgba(0,0,0,0.1); }
+        
+        /* Blocos de Código estilo Janela */
+        .reveal pre {
+            background: #ffffff;
+            border: 4px solid #00979C; /* Cor oficial Arduino Teal */
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Card do Instrutor */
+        .maker-profile {
+            background: white; border-radius: 20px; padding: 20px; 
+            border-bottom: 5px solid var(--tinker-orange);
+            display: flex; align-items: center; gap: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Botão simulando Tinkercad */
+        .btn-simular {
+            background: var(--tinker-green); color: white; padding: 10px 20px;
+            border-radius: 5px; text-decoration: none; font-weight: bold;
+            box-shadow: 0 4px 0 #2e8f46; margin-top: 20px; display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Grand Finale</h1>
+                <h3>Aula 06: Mostra de Projetos</h3>
+            </section>
+
+            <section>
+                <h3>Objetivo</h3>
+                <p>Usar tudo o que aprendemos para resolver um problema ou criar algo divertido.</p>
+            </section>
+
+            <section>
+                <h3>Ideias de Projetos</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="aula-card" style="width: auto;">🚦 Semáforo Inteligente</div>
+                    <div class="aula-card" style="width: auto;">🎹 Piano com Botões</div>
+                    <div class="aula-card" style="width: auto;">🚨 Alarme de Gaveta (LDR)</div>
+                    <div class="aula-card" style="width: auto;">🌡️ Termômetro Visual</div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Critérios de Avaliação</h3>
+                <ul>
+                    <li>Criatividade</li>
+                    <li>Organização dos Fios (no Tinkercad)</li>
+                    <li>Código comentado</li>
+                    <li>Funcionamento</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Mãos à Obra!</h2>
+                <p>O laboratório é de vocês.</p>
+                <a href="#" class="btn-simular">Criar Novo Circuito</a>
+            </section>
+
+            <section>
+                <a href="index.html" style="color: var(--tinker-blue);">Voltar ao Menu</a>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script> Reveal.initialize({ hash: true, controls: true, center: true, transition: 'slide', plugins: [ RevealHighlight ] }); </script>
+</body>
+</html>

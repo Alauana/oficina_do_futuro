@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Minicursos - Lógica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+
+    <style>
+        :root { --neon-blue: #00f3ff; --neon-yellow: #ffdd00; --bg-dark: #0a0a1a; }
+        .reveal { background-color: var(--bg-dark); background-image: linear-gradient(rgba(0, 243, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 243, 255, 0.05) 1px, transparent 1px); background-size: 40px 40px; font-family: 'Fira Code', monospace; }
+        .reveal h1, .reveal h2, .reveal h3 { font-family: 'VT323', monospace; text-transform: uppercase; letter-spacing: 3px; }
+        .reveal h1 { color: var(--neon-blue); text-shadow: 0 0 10px rgba(0,243,255,0.5); }
+        .reveal h3 { color: var(--neon-yellow); }
+        .reveal pre code { background: rgba(0,0,0,0.8); border: 2px dashed var(--neon-blue); box-shadow: 5px 5px 0px rgba(0,243,255,0.2); padding: 20px; }
+        .btn-final { padding: 15px 30px; border: 2px solid var(--neon-yellow); color: var(--neon-yellow); font-family: 'VT323'; text-decoration: none; display: inline-block; margin-top: 30px; }
+        .btn-final:hover { background: var(--neon-yellow); color: black; }
+        
+        /* Estilo do Card "Sobre Mim" */
+        .profile-card { display: flex; align-items: center; border: 2px solid var(--neon-blue); padding: 20px; background: rgba(0,0,0,0.6); text-align: left; gap: 20px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--neon-yellow); object-fit: cover; }
+        .profile-stats { font-size: 0.7em; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+            <h1>Aula 02</h1>
+            <h3>Variáveis e Operadores</h3>
+        </section>
+
+        <section>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+                <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Instructor" style="width: 80px; border-radius: 50%; border: 2px solid var(--neon-blue);">
+                <div style="text-align: left;">
+                    <p style="margin:0; font-size: 0.8em; color: var(--neon-yellow);">INSTRUTOR</p>
+                    <h4 style="margin:0;">Seu Nome</h4>
+                </div>
+            </div>
+            <hr style="border-color: var(--neon-blue); opacity: 0.3; margin-top: 20px;">
+        </section>
+
+        <section>
+            <h3>O que são Variáveis?</h3>
+            <p>Imagine que a memória do computador é um armazém gigante cheio de caixas.</p>
+            <div class="fragment" style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin-top: 20px;">
+                <p>📦 <b>Variável</b> = Uma caixa com uma etiqueta (nome).</p>
+                <p>📄 <b>Valor</b> = O que colocamos dentro.</p>
+                <p>🏷️ <b>Tipo</b> = O formato da caixa (para texto, número, etc).</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Tipos de Dados</h3>
+            <ul>
+                <li class="fragment"><span style="color: var(--neon-blue);">Inteiro (int):</span> 10, -5, 2023</li>
+                <li class="fragment"><span style="color: var(--neon-blue);">Real (float):</span> 3.14, 1.99</li>
+                <li class="fragment"><span style="color: var(--neon-blue);">Texto (string):</span> "Olá", "Ana"</li>
+                <li class="fragment"><span style="color: var(--neon-blue);">Lógico (bool):</span> Verdadeiro, Falso</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Mão na Massa</h3>
+            <pre><code class="javascript" data-trim>
+        // Vamos criar caixas!
+        var vidas = 3;           // Número
+        var nome = "Link";       // Texto
+        var temEspada = true;    // Lógico
+
+        // Operadores
+        vidas = vidas - 1;       // Agora vidas vale 2
+            </code></pre>
+        </section>
+
+        <section>
+            <a href="index.html" class="btn-final"><< Voltar ao Menu</a>
+        </section>    
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script> Reveal.initialize({ hash: true, controls: true, progress: true, center: true, transition: 'concave', plugins: [ RevealHighlight ] }); </script>
+</body>
+</html>

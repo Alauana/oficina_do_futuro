@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Arduino Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/arduino-light.min.css">
+
+    <style>
+        /* Customização Estilo Tinkercad */
+        :root { --tinker-blue: #0099ff; --tinker-orange: #ff7700; --bg-grid: #f2f7fa; }
+        
+        .reveal { 
+            font-family: 'Varela Round', sans-serif; 
+            background-color: var(--bg-grid);
+            background-image: linear-gradient(#dbebf7 1px, transparent 1px), linear-gradient(90deg, #dbebf7 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        
+        /* Títulos */
+        .reveal h1, .reveal h2, .reveal h3 { color: var(--tinker-blue); font-weight: bold; }
+        .reveal h1 { text-shadow: 3px 3px 0px rgba(0,0,0,0.1); }
+        
+        /* Blocos de Código estilo Janela */
+        .reveal pre {
+            background: #ffffff;
+            border: 4px solid #00979C; /* Cor oficial Arduino Teal */
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Card do Instrutor */
+        .maker-profile {
+            background: white; border-radius: 20px; padding: 20px; 
+            border-bottom: 5px solid var(--tinker-orange);
+            display: flex; align-items: center; gap: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Botão simulando Tinkercad */
+        .btn-simular {
+            background: var(--tinker-green); color: white; padding: 10px 20px;
+            border-radius: 5px; text-decoration: none; font-weight: bold;
+            box-shadow: 0 4px 0 #2e8f46; margin-top: 20px; display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Sensores & Atuadores</h1>
+                <h3>Aula 05: Automação Inteligente</h3>
+            </section>
+
+            <section>
+                <h3>Novos Brinquedos</h3>
+                <ul>
+                    <li><b>LDR (Fotoresistor):</b> Sensor de Luz.</li>
+                    <li><b>Micro Servo:</b> Motor que gira para uma posição exata (0° a 180°).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Controlando o Servo</h3>
+                <p>Precisamos de uma biblioteca (uma caixa de ferramentas pronta).</p>
+                <pre><code class="arduino" data-trim>
+            #include <Servo.h>
+
+            Servo meuServo;
+
+            void setup() {
+            meuServo.attach(9); // Servo no pino 9
+            }
+
+            void loop() {
+            meuServo.write(90); // Vá para 90 graus
+            }
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Projeto: A Catraca Automática</h3>
+                <p>Se o sensor de presença (PIR) ou botão for ativado:</p>
+                <ol>
+                    <li>Acenda o LED Verde.</li>
+                    <li>Gire o Servo para 90° (Abrir).</li>
+                    <li>Espere 3 segundos.</li>
+                    <li>Gire o Servo para 0° (Fechar) e apague LED.</li>
+                </ol>
+            </section>
+
+            <section>
+                <a href="index.html" style="color: var(--tinker-blue);">Voltar ao Menu</a>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script> Reveal.initialize({ hash: true, controls: true, center: true, transition: 'slide', plugins: [ RevealHighlight ] }); </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Minicursos - Lógica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+
+    <style>
+        :root { --neon-blue: #00f3ff; --neon-yellow: #ffdd00; --bg-dark: #0a0a1a; }
+        .reveal { background-color: var(--bg-dark); background-image: linear-gradient(rgba(0, 243, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 243, 255, 0.05) 1px, transparent 1px); background-size: 40px 40px; font-family: 'Fira Code', monospace; }
+        .reveal h1, .reveal h2, .reveal h3 { font-family: 'VT323', monospace; text-transform: uppercase; letter-spacing: 3px; }
+        .reveal h1 { color: var(--neon-blue); text-shadow: 0 0 10px rgba(0,243,255,0.5); }
+        .reveal h3 { color: var(--neon-yellow); }
+        .reveal pre code { background: rgba(0,0,0,0.8); border: 2px dashed var(--neon-blue); box-shadow: 5px 5px 0px rgba(0,243,255,0.2); padding: 20px; }
+        .btn-final { padding: 15px 30px; border: 2px solid var(--neon-yellow); color: var(--neon-yellow); font-family: 'VT323'; text-decoration: none; display: inline-block; margin-top: 30px; }
+        .btn-final:hover { background: var(--neon-yellow); color: black; }
+        
+        /* Estilo do Card "Sobre Mim" */
+        .profile-card { display: flex; align-items: center; border: 2px solid var(--neon-blue); padding: 20px; background: rgba(0,0,0,0.6); text-align: left; gap: 20px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--neon-yellow); object-fit: cover; }
+        .profile-stats { font-size: 0.7em; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+            <h1>Aula 06</h1>
+            <h3>O Desafio Final</h3>
+            <p style="color: #ff5555;">BOSS BATTLE MODE</p>
+        </section>
+
+        <section>
+            <h3>Status Report</h3>
+            <p>Você já aprendeu:</p>
+            <ul style="font-size: 0.8em;">
+                <li>✅ Algoritmos</li>
+                <li>✅ Variáveis (Caixas)</li>
+                <li>✅ Condicionais (Decisões)</li>
+                <li>✅ Repetição (Loops)</li>
+                <li>✅ Fluxogramas</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Desafio 1: A Média Escolar</h3>
+            <p style="text-align: left; font-size: 0.8em;">
+                Crie um algoritmo que:<br>
+                1. Receba 3 notas de um aluno.<br>
+                2. Calcule a média.<br>
+                3. SE média > 7: Escreva "Aprovado".<br>
+                4. SENÃO: Escreva "Recuperação".
+            </p>
+        </section>
+
+        <section>
+            <h3>Desafio 2: A Tabuada Automática</h3>
+            <p style="text-align: left; font-size: 0.8em;">
+                Crie um algoritmo que:<br>
+                1. Receba um número inteiro do usuário (ex: 5).<br>
+                2. Use uma estrutura de repetição (PARA) para mostrar a tabuada desse número de 1 a 10.<br>
+                <br>
+                <span style="color: var(--neon-yellow);">Ex: 5 x 1 = 5 ... 5 x 10 = 50</span>
+            </p>
+        </section>
+
+        <section>
+            <h2>Parabéns!</h2>
+            <p>Você completou o módulo de Lógica.</p>
+            <p>Próxima parada: <span style="color: var(--neon-blue);">Arduino</span></p>
+            
+            <a href="../index.html" class="btn-final">🏠 Voltar para Início do Site</a>
+        </section>    
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script> Reveal.initialize({ hash: true, controls: true, progress: true, center: true, transition: 'concave', plugins: [ RevealHighlight ] }); </script>
+</body>
+</html>

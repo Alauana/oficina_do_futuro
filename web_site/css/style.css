@@ -1,0 +1,215 @@
+/* css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=VT323&family=Varela+Round&family=Fira+Code:wght@500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+:root {
+    --bg-deep: #0f0c29;
+    --bg-mid: #302b63;
+    --bg-light: #24243e;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--bg-deep), var(--bg-mid), var(--bg-light));
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+/* Título Principal */
+.main-title {
+    text-align: center;
+    margin-bottom: 50px;
+    z-index: 10;
+}
+
+.main-title h1 {
+    font-size: 3.5em;
+    font-weight: 900;
+    margin: 0;
+    background: linear-gradient(to right, #fff, #a5a5a5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.main-title p {
+    font-size: 1.2em;
+    opacity: 0.8;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* Container dos Portais */
+.portal-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    z-index: 10;
+}
+
+/* Estilo Base dos Cartões */
+.portal-card {
+    position: relative;
+    width: 280px;
+    height: 380px;
+    text-decoration: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.portal-card:hover {
+    transform: translateY(-15px) scale(1.03);
+    z-index: 20;
+}
+
+.card-content h2 {
+    font-size: 2em;
+    margin: 0;
+    line-height: 1;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+.btn-enter {
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+/* =========================================
+   ESTILO ESPECÍFICO: LÓGICA (RETRO)
+   ========================================= */
+.card-retro {
+    background-color: #0a0a1a;
+    font-family: 'VT323', monospace;
+    border: 2px solid #00f3ff;
+    background-image: linear-gradient(rgba(0, 243, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 243, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.card-retro h2 {
+    color: #00f3ff;
+    text-shadow: 3px 3px 0 #ff00ff;
+    letter-spacing: 2px;
+}
+
+.card-retro:hover {
+    box-shadow: 0 0 30px #00f3ff;
+}
+
+.card-retro .icon-area {
+    font-size: 4em;
+    color: #ffdd00;
+    text-shadow: 0 0 15px #ffdd00;
+}
+
+/* =========================================
+   ESTILO ESPECÍFICO: ARDUINO (MAKER/TINKER)
+   ========================================= */
+.card-maker {
+    background-color: #ffffff;
+    font-family: 'Varela Round', sans-serif;
+    border: 4px solid #0099ff;
+    color: #333;
+    background-image: radial-gradient(#dbebf7 2px, transparent 2px);
+    background-size: 20px 20px;
+}
+
+.card-maker h2 {
+    color: #0099ff;
+}
+
+.card-maker .btn-enter {
+    background: #ff7700;
+    color: white;
+    box-shadow: 0 4px 0 #cc5f00;
+}
+
+.card-maker:hover {
+    box-shadow: 0 15px 30px rgba(0, 153, 255, 0.4);
+}
+
+.card-maker .icon-area {
+    font-size: 4em;
+    color: #0099ff;
+}
+
+/* =========================================
+   ESTILO ESPECÍFICO: WEB (DEV MODE)
+   ========================================= */
+.card-dev {
+    background-color: #282a36; /* Dracula BG */
+    font-family: 'Fira Code', monospace;
+    border-left: 6px solid #ff79c6;
+    color: #f8f8f2;
+}
+
+.card-dev h2 {
+    color: #ff79c6;
+}
+
+.card-dev p {
+    color: #6272a4; /* Comentário cinza */
+}
+
+.card-dev .btn-enter {
+    background: #50fa7b;
+    color: #282a36;
+}
+
+.card-dev:hover {
+    box-shadow: 0 0 30px rgba(189, 147, 249, 0.4);
+    border-left-width: 10px;
+}
+
+.card-dev .icon-area {
+    font-size: 4em;
+    color: #8be9fd;
+}
+
+/* Fundo Animado (Partículas simples) */
+.background-particles {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.1;
+    z-index: 0;
+    animation: moveSpace 100s linear infinite;
+}
+
+@keyframes moveSpace {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-1000px); }
+}
+
+@media (max-width: 768px) {
+    .portal-container { flex-direction: column; align-items: center; }
+}
