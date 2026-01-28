@@ -55,8 +55,56 @@
                 <ul>
                     <li class="fragment">Entender o que é Lógica de Programação.</li>
                     <li class="fragment">Diferenciar Dados vs. Instruções.</li>
-                    <li class="fragment">Criar seu primeiro algoritmo (no papel!).</li>
+                    <li class="fragment">Criar seu primeiro algoritmo (no papel).</li>
                 </ul>
+            </section>
+
+            <section>
+                <h3>O que é Lógica de Programação?</h3>
+                <p>Lógica de Programação é a arte de pensar de forma estruturada para resolver problemas através de passos claros e precisos.</p>
+                <br>
+                <p style="color: var(--neon-yellow);">É como dar instruções para um robô seguir!</p>
+            </section>
+
+            <section>
+                <h3>Como funciona?</h3>
+                <p>Imagine que você quer fazer um bolo. Você precisa seguir uma receita com passos específicos:</p>
+                <p style="color: var(--neon-blue);">Aqui iniciamos o pensamento algorítmico</p>
+            </section>
+
+            <section>
+                <h3>Algoritmos no Dia a Dia</h3>
+                <p>Eles estão em todo lugar! Não só dentro da máquina.</p>
+
+                <div style="display: flex; justify-content: space-around; align-items: flex-start; margin-top: 50px; gap: 20px;">
+
+                    <div class="fragment" style="flex: 1; text-align: center;">
+                        <img src="imagens/bolo.png"
+                            alt="Bolo Pixel"
+                            style="width: 100px; height: 75px; image-rendering: pixelated; border:none; background:none; box-shadow:none;">
+                        <h4 style="color: var(--neon-yellow); margin: 0; font-size: 1.2em;">Receita</h4>
+                        <p style="font-size: 0.7em; opacity: 0.8;">Uma sequência exata de ingredientes e passos.</p>
+                    </div>
+
+                    <div class="fragment" style="flex: 1; text-align: center;">
+                        <img src="imagens/mapa.png"
+                            alt="Mapa Pixel"
+                            style="width: 100px; height: 75px; image-rendering: pixelated; border:none; background:none; box-shadow:none;">
+                        <h4 style="color: var(--neon-blue); margin: 0; font-size: 1.2em;">Mapas</h4>
+                        <p style="font-size: 0.7em; opacity: 0.8;">Instruções: "Vire à direita, siga em frente..."</p>
+                    </div>
+
+                    <div class="fragment" style="flex: 1; text-align: center;">
+                        <img src="imagens/semaforo.png"
+                            alt="Semáforo Pixel"
+                            style="width: 100px; height: 75px; image-rendering: pixelated; border:none; background:none; box-shadow:none;">
+                        <h4 style="color: #ff5555; margin: 0; font-size: 1.2em;">Regras</h4>
+                        <p style="font-size: 0.7em; opacity: 0.8;">Condição: "SE estiver vermelho, ENTÃO pare."</p>
+                    </div>
+
+                </div>
+                <div style="margin-top: 40px; border-top: 2px dashed var(--neon-blue); opacity: 0.5;"></div>
+                <p style="color: var(--neon-blue); font-size: 0.8em; margin-top: 20px;">>_ Conclusão: Você já é um algoritmo ambulante!</p>
             </section>
 
             <section>
@@ -72,6 +120,83 @@
                         <p>Modo de Preparo</p>
                         <small>"Bata os ovos", "Misture"</small>
                     </div>
+                </div>
+            </section>
+
+            <section>
+                <h3><span style="color: var(--neon-yellow);">DESAFIO:</span> O que é isso?</h3>
+                <p>Vamos classificar juntos! É um <b>DADO</b> ou uma <b>INSTRUÇÃO</b>?</p>
+                
+                <div style="font-size: 0.7em; margin-bottom: 30px; opacity: 0.8;">
+                    (Dica: <b>Dado</b> é informação estática. <b>Instrução</b> é uma ordem/ação.)
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: center;">
+
+                    <div class="fragment fade-up" style="background: rgba(255,255,255,0.1); border: 2px solid white; padding: 15px;">
+                        <code style="font-size: 1.2em; color: #fff;">"3 Ovos"</code>
+                    </div>
+
+                    <div class="fragment fade-up" style="background: rgba(0, 243, 255, 0.1); border: 2px dashed var(--neon-blue); padding: 15px;">
+                        <code style="font-size: 1.2em; color: var(--neon-blue);">Misture tudo</code>
+                    </div>
+
+                    <div class="fragment fade-up" style="background: rgba(255, 221, 0, 0.1); border: 2px dashed var(--neon-yellow); padding: 15px;">
+                        <code style="font-size: 1.2em; color: var(--neon-yellow);">pulePara(frente)</code>
+                    </div>
+
+                    <div class="fragment fade-up" style="background: rgba(255,255,255,0.1); border: 2px solid white; padding: 15px;">
+                        <code style="font-size: 1.2em; color: #fff;">1050</code>
+                    </div>
+
+                    <div class="fragment fade-up" style="background: rgba(255,255,255,0.1); border: 2px solid white; padding: 15px;">
+                        <code style="font-size: 1.2em; color: #fff;">"Rua 15 de Novembro"</code>
+                    </div>
+
+                    <div class="fragment fade-up" style="background: rgba(255, 85, 85, 0.1); border: 2px dashed #ff5555; padding: 15px;">
+                        <code style="font-size: 1.2em; color: #ff5555;">se (vida == 0) entao</code>
+                    </div>
+
+                </div>
+            </section>
+
+            <section>
+                <h3><span style="color: #ff5555;">ALERTA DE BUG!</span> 🐛</h3>
+                <p>Estes algoritmos estão quebrados. Vamos consertar?</p>
+
+                <div style="display: flex; gap: 20px; justify-content: center; margin-top: 30px;">
+
+                    <div class="fragment" style="flex:1; background: rgba(255,255,255,0.05); padding: 15px 5px 0 5px; border: 2px solid var(--neon-blue); border-radius: 10px;">
+                        <h4 style="color: var(--neon-blue); margin-bottom: 10px;">1. Trocar Lâmpada</h4>
+                        <ol style="font-size: 0.6em; text-align: left; line-height: 1.8em;">
+                            <li>Pegar a escada</li>
+                            <li>Subir na escada</li>
+                            <li>Rosquear a lâmpada NOVA</li>
+                            <li>Tirar a lâmpada VELHA</li>
+                            <li>Descer da escada</li>
+                        </ol>
+                    </div>
+
+                    <div class="fragment" style="flex:1; background: rgba(255,255,255,0.05); border: 2px solid var(--neon-yellow); padding: 15px; border-radius: 10px;">
+                        <h4 style="color: var(--neon-yellow); margin-bottom: 10px;">2. Somar Números</h4>
+                        <ol style="font-size: 0.6em; text-align: left; line-height: 1.8em;">
+                            <li>Perguntar número A</li>
+                            <li>Perguntar número B</li>
+                            <li>Mostrar o Resultado</li>
+                        </ol>
+                    </div>
+
+                    <div class="fragment" style="flex:1; background: rgba(255,255,255,0.05); border: 2px solid #ff5555; padding: 15px; border-radius: 10px;">
+                        <h4 style="color: #ff5555; margin-bottom: 10px;">3. Escovar Dentes</h4>
+                        <ol style="font-size: 0.6em; text-align: left; line-height: 1.8em;">
+                            <li>Pegar escova e pasta</li>
+                            <li>Colocar pasta na escova</li>
+                            <li>Escovar os dentes</li>
+                            <li>Engolir a pasta</li>
+                            <li>Lavar a boca</li>
+                        </ol>
+                    </div>
+
                 </div>
             </section>
 
