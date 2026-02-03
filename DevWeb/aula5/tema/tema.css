@@ -1,0 +1,38 @@
+/* Estilo Padrão (Claro) */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    
+    /* Transição suave */
+    transition: background-color 0.5s, color 0.5s; 
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    color: #333;
+    transition: all 0.3s; /* Suavidade no botão também */
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+/* --- CLASSE MODO ESCURO --- */
+.modo-escuro {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Estilo específico do botão quando o corpo tem a classe modo-escuro */
+.modo-escuro button {
+    background-color: #fff;
+    color: #222;
+}

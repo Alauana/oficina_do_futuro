@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Soma em Tempo Real</title>
+</head>
+<body>
+
+    <h2>Somador Automático</h2>
+    <p>Digite os números e veja o resultado mudar na hora.</p>
+    <p><i>(Tente fazer a soma passar de 50 para ver o alerta!)</i></p>
+
+    <input type="number" id="numero1" oninput="somar()" placeholder="Digite...">
+    <span>+</span>
+    <input type="number" id="numero2" oninput="somar()" placeholder="Digite...">
+
+    <h3>Resultado: <span id="resultado" style="color: blue;">0</span></h3>
+
+    <script src="calc1.js"></script>
+
+</body>
+</html>
